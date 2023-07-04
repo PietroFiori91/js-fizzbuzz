@@ -1,3 +1,17 @@
 body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+
+.card-box {
+  aspect-ratio: 1/1;
+  border: 1px solid blue;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: start;
+}
+
+.card-square {
+  border: 1px solid greenyellow;
+  aspect-ratio: 1/1;
+  width: calc(100% / 9);
+}
