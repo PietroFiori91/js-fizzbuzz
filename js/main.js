@@ -22,20 +22,17 @@ for (let i = 0; i < cardSquare; i++) {
   );
 
   if (i % 3 === 0) {
-    console.log("sono 3");
-    cardBox.append(singleSquare);
     singleSquare.classList.add("bg-success");
+    singleSquare.innerHTML = "Fizz";
   }
 
   if (i % 5 === 0) {
-    console.log("sono 5");
-    cardBox.append(singleSquare);
     singleSquare.classList.add("bg-secondary");
+    singleSquare.innerHTML = "Buzz";
   }
 
   if (i % 3 === 0 && i % 5 === 0) {
-    console.log("sono 5");
-    cardBox.append(singleSquare);
     singleSquare.classList.add("bg-danger");
+    singleSquare.innerHTML = "FizzBuzz";
   }
 }
